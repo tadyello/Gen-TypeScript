@@ -1,0 +1,28 @@
+import { Animal } from "./animal";
+
+export class Cachorro extends Animal{
+    cor: string;
+
+    constructor(
+        cor: string,
+        especie: string,
+        idade: number,
+        familia: string,
+        nome: string
+    ){
+       super(especie, idade, familia, nome);
+        this.cor = cor ;
+    }
+
+    correr(){
+        console.log("Correndo como cachorro!");
+    }
+
+    som(){
+        console.log("au au au!");
+    }
+
+ 
+
+
+}
